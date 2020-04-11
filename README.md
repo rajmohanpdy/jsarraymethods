@@ -1,2 +1,0 @@
-# jsarraymethods
-Created with CodeSandbox

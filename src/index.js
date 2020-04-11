@@ -17,7 +17,7 @@ console.log(mes);
 console.log(mesd);
 
 function test1(...args) {
-  console.log(args[2]);
+  console.log(args[2]); // new
 }
 
 test1(1, 2, 90);

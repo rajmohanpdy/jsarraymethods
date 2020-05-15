@@ -6,7 +6,7 @@ const items = [
   { name: "ela", age: 67 }
 ];
 
-const items2 = [1, 2, 3, 4, 5, 6, 7];
+const items2 = [1, 2, 3, 4, 5, 6, 7, "van"];
 const item3 = { fname: "rajmohan" };
 
 // spread and rest
@@ -37,7 +37,7 @@ test1(1, 2, 90);
 //8. includes
 
 let output = items.filter(item => {
-  return item.age > 34;
+  return item.age > 40;
 });
 console.log(output);
 
@@ -70,5 +70,5 @@ let findReduce = items.reduce((totalItem, item) => {
 }, 0);
 console.log(findReduce);
 
-let findIncludes = items2.includes(7);
+let findIncludes = items2.includes("van");
 console.log(findIncludes);

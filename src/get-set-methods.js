@@ -33,3 +33,14 @@ if (emp.name) {
 emp.name = "Bond 007";
 console.log(emp.name); // Mr. BOND 007
 console.log('meow'.repeat(10)) // 'meowmeowmeow');
+
+const promise = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+   const sum = 4 + 5;
+   resolve(sum);
+  }, 2000);
+ });
+ 
+ promise.then(function(result) {
+  console.log(result); // 9
+ });

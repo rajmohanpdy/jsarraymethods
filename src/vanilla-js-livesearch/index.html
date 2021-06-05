@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/vanilla-search.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript live search</h1>
+    <input
+      autocomplete="off"
+      type="search"
+      id="search"
+      placeholder="Search for a country or name!"
+    />
+
+    <ul id="results"></ul>
+    <h2>Shoppping List(Content Editable)</h2>
+    <ul class="content-editable" contenteditable="true">
+      <li>1. Milk</li>
+      <li>2. Bread</li>
+      <li>3. Honey</li>
+    </ul>
+    <p>
+      Did you know, you can <mark>"Highlight something interesting"</mark> just
+      with an HTML tag?
+    </p>
+    <form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+      <input type="number" id="a" value="0" />
+      * <input type="number" id="b" value="0" /> =
+      <output name="x" for="a b"></output>
+    </form>
+    <form action="" method="get">
+      <label for="fruit">Choose your fruit from the list:</label>
+      <input list="fruits" name="fruit" id="fruit" />
+      <datalist id="fruits">
+        <option value="Apple"></option>
+        <option value="Orange"></option>
+        <option value="Banana"></option>
+        <option value="Mango"></option>
+        <option value="Avacado"></option>
+      </datalist>
+
+      <input type="submit" />
+    </form>
+    <input type="text" id="username2" name="username" required autofocus />
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter"
+      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$"
+      autofocus
+      required
+    />
+    <script src="./vanilla-js-livesearch.js"></script>
+  </body>
+</html>
